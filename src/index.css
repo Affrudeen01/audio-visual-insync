@@ -122,7 +122,7 @@ All colors MUST be HSL.
     @apply bg-player-control/80 backdrop-blur-sm border border-border/20;
     @apply hover:bg-player-control-hover hover:scale-105;
     @apply transition-all duration-200 ease-out;
-    @apply shadow-control;
+    @apply shadow-lg;
   }
 
   .player-button.primary {
