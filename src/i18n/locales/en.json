@@ -1,0 +1,56 @@
+{
+  "common": {
+    "upload": "Upload",
+    "language": "Language",
+    "settings": "Settings",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "header": {
+    "title": "InSync",
+    "subtitle": "Premium Video Platform",
+    "upload": "Upload"
+  },
+  "video": {
+    "title": "Video Player",
+    "description": "Professional video playback with multi-language audio and subtitle support",
+    "heroTitle": "Premium Video Streaming Experience",
+    "heroDescription": "Multi-language video player optimized for low-resource environments with advanced subtitle support and AI-powered generation."
+  },
+  "features": {
+    "formats": {
+      "title": "Multi-Format Support",
+      "description": "Supports MP4, MKV, WebM with HLS and MPEG-DASH streaming protocols for maximum compatibility."
+    },
+    "audio": {
+      "title": "Multi-Language Audio",
+      "description": "Seamless switching between multiple audio tracks in different languages with automatic detection."
+    },
+    "subtitles": {
+      "title": "Advanced Subtitles",
+      "description": "Built-in subtitle support with external file upload, timing controls, and AI-powered generation."
+    }
+  },
+  "subtitles": {
+    "title": "Subtitles",
+    "off": "Off",
+    "show": "Show Subtitles",
+    "hide": "Hide Subtitles",
+    "upload": "Upload Subtitle File",
+    "builtin": "Built-in",
+    "external": "External"
+  },
+  "audio": {
+    "title": "Audio",
+    "autoDetect": "Auto-detect"
+  },
+  "generator": {
+    "title": "AI Subtitle Generation",
+    "description": "Upload videos and automatically generate subtitles in multiple languages using OpenAI Whisper",
+    "comingSoon": "Coming Soon"
+  },
+  "footer": {
+    "copyright": "© 2024 InSync Video Platform. Optimized for in-flight entertainment and low-resource environments."
+  }
+}

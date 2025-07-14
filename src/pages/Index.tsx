@@ -1,9 +1,20 @@
+import { useState } from 'react';
 import { VideoPlayer } from '@/components/VideoPlayer';
-import { Play, Globe, Subtitles, Upload } from 'lucide-react';
+import { VideoUploader } from '@/components/VideoUploader';
+import { LanguageSelector } from '@/components/LanguageSelector';
+import { ThemeToggle } from '@/components/ThemeToggle';
+import { Play, Subtitles, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { useTranslation } from 'react-i18next';
 
 const Index = () => {
+  const { t } = useTranslation();
+  const [uploadedVideoUrl, setUploadedVideoUrl] = useState<string>('');
+
+  const handleVideoSelect = (file: File, url: string) => {
+    setUploadedVideoUrl(url);
+  };
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -22,14 +33,8 @@ const Index = () => {
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <Button variant="ghost" size="sm">
-                <Globe className="w-4 h-4 mr-2" />
-                EN
-              </Button>
-              <Button variant="secondary" size="sm">
-                <Upload className="w-4 h-4 mr-2" />
-                Upload
-              </Button>
+              <LanguageSelector />
+              <ThemeToggle />
             </div>
           </div>
         </div>
@@ -40,10 +45,10 @@ const Index = () => {
         {/* Hero Section */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
-            Premium Video Streaming Experience
+            {t('video.heroTitle')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Multi-language video player optimized for low-resource environments with advanced subtitle support and AI-powered generation.
+            {t('video.heroDescription')}
           </p>
         </div>
 
@@ -60,10 +65,17 @@ const Index = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="p-6">
-              <VideoPlayer 
-                className="aspect-video w-full max-w-4xl mx-auto"
-                poster="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1600&h=900"
-              />
+              <div className="space-y-4">
+                <VideoUploader
+                  onVideoSelect={handleVideoSelect}
+                  className="mb-4"
+                />
+                <VideoPlayer 
+                  className="aspect-video w-full max-w-4xl mx-auto"
+                  src={uploadedVideoUrl}
+                  poster="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1600&h=900"
+                />
+              </div>
             </CardContent>
           </Card>
         </div>

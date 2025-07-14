@@ -1,0 +1,56 @@
+{
+  "common": {
+    "upload": "Télécharger",
+    "language": "Langue",
+    "settings": "Paramètres",
+    "close": "Fermer",
+    "save": "Enregistrer",
+    "cancel": "Annuler"
+  },
+  "header": {
+    "title": "InSync",
+    "subtitle": "Plateforme Vidéo Premium",
+    "upload": "Télécharger"
+  },
+  "video": {
+    "title": "Lecteur Vidéo",
+    "description": "Lecture vidéo professionnelle avec support audio et sous-titres multilingues",
+    "heroTitle": "Expérience de Streaming Vidéo Premium",
+    "heroDescription": "Lecteur vidéo multilingue optimisé pour les environnements à ressources limitées avec support avancé des sous-titres et génération IA."
+  },
+  "features": {
+    "formats": {
+      "title": "Support Multi-Format",
+      "description": "Supporte MP4, MKV, WebM avec les protocoles de streaming HLS et MPEG-DASH pour une compatibilité maximale."
+    },
+    "audio": {
+      "title": "Audio Multilingue",
+      "description": "Commutation transparente entre plusieurs pistes audio dans différentes langues avec détection automatique."
+    },
+    "subtitles": {
+      "title": "Sous-titres Avancés",
+      "description": "Support intégré des sous-titres avec téléchargement de fichiers externes, contrôles de synchronisation et génération IA."
+    }
+  },
+  "subtitles": {
+    "title": "Sous-titres",
+    "off": "Désactivé",
+    "show": "Afficher les Sous-titres",
+    "hide": "Masquer les Sous-titres",
+    "upload": "Télécharger un Fichier de Sous-titres",
+    "builtin": "Intégré",
+    "external": "Externe"
+  },
+  "audio": {
+    "title": "Audio",
+    "autoDetect": "Détection automatique"
+  },
+  "generator": {
+    "title": "Génération IA de Sous-titres",
+    "description": "Téléchargez des vidéos et générez automatiquement des sous-titres en plusieurs langues avec OpenAI Whisper",
+    "comingSoon": "Bientôt Disponible"
+  },
+  "footer": {
+    "copyright": "© 2024 Plateforme Vidéo InSync. Optimisée pour le divertissement en vol et les environnements à ressources limitées."
+  }
+}

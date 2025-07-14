@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { Subtitles, ChevronDown, Upload, Eye, EyeOff } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Button } from './ui/button';
 import {
   DropdownMenu,
@@ -18,24 +19,56 @@ interface SubtitleTrack {
   isExternal?: boolean;
 }
 
-const mockSubtitleTracks: SubtitleTrack[] = [
-  { id: 'en', language: 'en', label: 'English' },
-  { id: 'fr', language: 'fr', label: 'Français' },
-  { id: 'de', language: 'de', label: 'Deutsch' },
-  { id: 'ar', language: 'ar', label: 'العربية' },
+const builtInSubtitleTracks: SubtitleTrack[] = [
+  { id: 'en', language: 'en', label: 'English', src: '/subtitles/default-en.vtt' },
+  { id: 'fr', language: 'fr', label: 'Français', src: '/subtitles/default-fr.vtt' },
+  { id: 'de', language: 'de', label: 'Deutsch', src: '/subtitles/default-de.vtt' },
+  { id: 'ar', language: 'ar', label: 'العربية', src: '/subtitles/default-ar.vtt' },
 ];
 
-export const SubtitleSelector = () => {
+interface SubtitleSelectorProps {
+  videoRef?: React.RefObject<HTMLVideoElement>;
+}
+
+export const SubtitleSelector = ({ videoRef }: SubtitleSelectorProps) => {
   const [selectedTrack, setSelectedTrack] = useState<SubtitleTrack | null>(null);
   const [subtitlesEnabled, setSubtitlesEnabled] = useState(false);
-  const [availableTracks, setAvailableTracks] = useState<SubtitleTrack[]>(mockSubtitleTracks);
+  const [availableTracks, setAvailableTracks] = useState<SubtitleTrack[]>(builtInSubtitleTracks);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   const handleTrackSelect = (track: SubtitleTrack | null) => {
     setSelectedTrack(track);
     setSubtitlesEnabled(track !== null);
-    // Here you would implement the actual subtitle track switching logic
+    
+    // Update video element subtitle tracks
+    if (videoRef?.current) {
+      const video = videoRef.current;
+      
+      // Remove existing subtitle tracks
+      const existingTracks = video.querySelectorAll('track[kind="subtitles"]');
+      existingTracks.forEach(trackEl => trackEl.remove());
+      
+      // Add new subtitle track if selected
+      if (track && track.src) {
+        const trackElement = document.createElement('track');
+        trackElement.kind = 'subtitles';
+        trackElement.src = track.src;
+        trackElement.srclang = track.language;
+        trackElement.label = track.label;
+        trackElement.default = true;
+        video.appendChild(trackElement);
+        
+        // Enable text tracks
+        setTimeout(() => {
+          if (video.textTracks.length > 0) {
+            video.textTracks[0].mode = 'showing';
+          }
+        }, 100);
+      }
+    }
+    
     console.log('Switching to subtitle track:', track);
   };
 
@@ -109,7 +142,7 @@ export const SubtitleSelector = () => {
           >
             <Subtitles className="w-4 h-4 mr-2" />
             <span className="text-xs font-medium">
-              {selectedTrack ? selectedTrack.label : 'Subtitles'}
+              {selectedTrack ? selectedTrack.label : t('subtitles.title')}
             </span>
             <ChevronDown className="w-4 h-4 ml-2" />
           </Button>
@@ -129,7 +162,7 @@ export const SubtitleSelector = () => {
             ) : (
               <EyeOff className="w-4 h-4 mr-2" />
             )}
-            <span>{subtitlesEnabled ? 'Hide Subtitles' : 'Show Subtitles'}</span>
+            <span>{subtitlesEnabled ? t('subtitles.hide') : t('subtitles.show')}</span>
           </DropdownMenuItem>
 
           <DropdownMenuSeparator />
@@ -144,7 +177,7 @@ export const SubtitleSelector = () => {
             }`}
           >
             <div className="flex items-center justify-between w-full">
-              <span>Off</span>
+              <span>{t('subtitles.off')}</span>
               {!selectedTrack && (
                 <div className="w-2 h-2 bg-primary rounded-full" />
               )}
@@ -168,7 +201,7 @@ export const SubtitleSelector = () => {
               <div className="flex flex-col flex-1">
                 <span className="font-medium">{track.label}</span>
                 <span className="text-xs text-muted-foreground">
-                  {track.isExternal ? 'External' : 'Built-in'}
+                  {track.isExternal ? t('subtitles.external') : t('subtitles.builtin')}
                 </span>
               </div>
               {selectedTrack?.id === track.id && (
@@ -185,7 +218,7 @@ export const SubtitleSelector = () => {
             className="cursor-pointer hover:bg-muted/50"
           >
             <Upload className="w-4 h-4 mr-2" />
-            <span>Upload Subtitle File</span>
+            <span>{t('subtitles.upload')}</span>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
