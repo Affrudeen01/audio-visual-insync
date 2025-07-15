@@ -3,96 +3,68 @@
 @tailwind utilities;
 
 /* InSync Video Platform Design System
-Premium dark-themed streaming interface optimized for video consumption
+Premium dark/light themed streaming interface optimized for video consumption
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
+    /* Light theme */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 271 76% 53%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 271 76% 63%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 189 85% 55%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 271 76% 53%;
+    --player-surface: 240 10% 3.9%;
+    --player-control: 240 3.7% 15.9%;
+    --player-control-hover: 240 4.8% 95.9%;
+    --progress-track: 240 4.8% 95.9%;
+    --progress-fill: 271 76% 53%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
     /* Dark streaming theme - deep space blacks */
     --background: 222 84% 3%;
     --foreground: 210 40% 98%;
-
-    /* Card and surface elements */
     --card: 225 30% 7%;
     --card-foreground: 210 40% 95%;
-
-    /* Popover and dropdown elements */
     --popover: 225 40% 6%;
     --popover-foreground: 210 40% 98%;
-
-    /* Primary - Purple streaming accent */
     --primary: 271 76% 53%;
     --primary-foreground: 210 40% 98%;
     --primary-glow: 271 76% 63%;
-
-    /* Secondary - Subtle dark surface */
     --secondary: 225 25% 12%;
     --secondary-foreground: 210 40% 95%;
-
-    /* Muted elements */
     --muted: 225 20% 10%;
     --muted-foreground: 215 16% 65%;
-
-    /* Accent - Cyan highlight */
     --accent: 189 85% 55%;
     --accent-foreground: 225 30% 5%;
-
-    /* Destructive/Error states */
     --destructive: 0 75% 55%;
     --destructive-foreground: 210 40% 98%;
-
-    /* Borders and inputs */
     --border: 225 25% 15%;
     --input: 225 25% 12%;
     --ring: 271 76% 53%;
-
-    /* Video player specific colors */
     --player-surface: 225 40% 4%;
     --player-control: 225 20% 8%;
     --player-control-hover: 225 25% 12%;
     --progress-track: 225 20% 15%;
     --progress-fill: 271 76% 53%;
-
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(271 76% 53%), hsl(189 85% 55%));
-    --gradient-surface: linear-gradient(180deg, hsl(225 30% 7%), hsl(225 40% 4%));
-    --gradient-control: linear-gradient(180deg, hsl(225 25% 12%), hsl(225 20% 8%));
-
-    /* Shadows and effects */
-    --shadow-player: 0 25px 50px -12px hsl(222 84% 1% / 0.6);
-    --shadow-control: 0 4px 20px -4px hsl(222 84% 1% / 0.4);
-    --shadow-glow: 0 0 40px hsl(271 76% 53% / 0.3);
-
-    /* Border radius */
-    --radius: 0.75rem;
-
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-controls: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-
-  .dark {
-    /* Same values as root since we're using dark theme by default */
-    --background: 222 84% 3%;
-    --foreground: 210 40% 98%;
-    --card: 225 30% 7%;
-    --card-foreground: 210 40% 95%;
-    --popover: 225 40% 6%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 271 76% 53%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 225 25% 12%;
-    --secondary-foreground: 210 40% 95%;
-    --muted: 225 20% 10%;
-    --muted-foreground: 215 16% 65%;
-    --accent: 189 85% 55%;
-    --accent-foreground: 225 30% 5%;
-    --destructive: 0 75% 55%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 225 25% 15%;
-    --input: 225 25% 12%;
-    --ring: 271 76% 53%;
   }
 }
 
@@ -127,7 +99,7 @@ All colors MUST be HSL.
 
   .player-button.primary {
     @apply bg-gradient-to-r from-primary to-accent;
-    filter: drop-shadow(var(--shadow-glow));
+    filter: drop-shadow(0 0 40px hsl(var(--primary) / 0.3));
   }
 
   /* Progress Bar */
@@ -149,24 +121,5 @@ All colors MUST be HSL.
 
   .progress-bar:hover .progress-thumb {
     @apply opacity-100 scale-100;
-  }
-
-  /* Fade animations */
-  .fade-in {
-    animation: fadeIn 0.3s ease-out forwards;
-  }
-
-  .fade-out {
-    animation: fadeOut 0.3s ease-out forwards;
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  @keyframes fadeOut {
-    from { opacity: 1; transform: translateY(0); }
-    to { opacity: 0; transform: translateY(10px); }
   }
 }

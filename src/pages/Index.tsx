@@ -59,10 +59,10 @@ const Index = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Play className="w-5 h-5 text-primary" />
-                Video Player
+                {t('video.player')}
               </CardTitle>
               <CardDescription>
-                Professional video playback with multi-language audio and subtitle support
+                {t('video.playerDescription')}
               </CardDescription>
             </CardHeader>
             <CardContent className="p-6">
@@ -87,12 +87,12 @@ const Index = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-lg">
                 <Play className="w-5 h-5 text-primary" />
-                Multi-Format Support
+                {t('video.multiFormat')}
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Supports MP4, MKV, WebM with HLS and MPEG-DASH streaming protocols for maximum compatibility.
+                {t('video.multiFormatDesc')}
               </p>
             </CardContent>
           </Card>
@@ -101,12 +101,12 @@ const Index = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-lg">
                 <Globe className="w-5 h-5 text-accent" />
-                Multi-Language Audio
+                {t('video.multiLanguage')}
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Seamless switching between multiple audio tracks in different languages with automatic detection.
+                {t('video.multiLanguageDesc')}
               </p>
             </CardContent>
           </Card>
@@ -115,12 +115,12 @@ const Index = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-lg">
                 <Subtitles className="w-5 h-5 text-primary" />
-                Advanced Subtitles
+                {t('video.advancedSubtitles')}
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Built-in subtitle support with external file upload, timing controls, and AI-powered generation.
+                {t('video.advancedSubtitlesDesc')}
               </p>
             </CardContent>
           </Card>
@@ -131,13 +131,13 @@ const Index = () => {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Upload className="w-5 h-5 text-primary" />
-              AI Subtitle Generation
+              {t('video.aiGeneration')}
               <span className="ml-auto text-xs bg-primary/20 text-primary px-2 py-1 rounded-full">
-                Coming Soon
+                {t('video.comingSoon')}
               </span>
             </CardTitle>
             <CardDescription>
-              Upload videos and automatically generate subtitles in multiple languages using OpenAI Whisper
+              {t('video.aiGenerationDesc')}
             </CardDescription>
           </CardHeader>
         </Card>
@@ -147,7 +147,7 @@ const Index = () => {
       <footer className="border-t border-border/20 bg-card/20 backdrop-blur-sm">
         <div className="container mx-auto px-6 py-8">
           <div className="text-center text-muted-foreground">
-            <p>© 2024 InSync Video Platform. Optimized for in-flight entertainment and low-resource environments.</p>
+            <p>{t('footer.copyright')}</p>
           </div>
         </div>
       </footer>

@@ -1,36 +1,41 @@
 {
-  "common": {
-    "upload": "Télécharger",
-    "language": "Langue",
-    "settings": "Paramètres",
-    "close": "Fermer",
-    "save": "Enregistrer",
-    "cancel": "Annuler"
-  },
-  "header": {
-    "title": "InSync",
-    "subtitle": "Plateforme Vidéo Premium",
-    "upload": "Télécharger"
-  },
   "video": {
-    "title": "Lecteur Vidéo",
-    "description": "Lecture vidéo professionnelle avec support audio et sous-titres multilingues",
-    "heroTitle": "Expérience de Streaming Vidéo Premium",
-    "heroDescription": "Lecteur vidéo multilingue optimisé pour les environnements à ressources limitées avec support avancé des sous-titres et génération IA."
+    "heroTitle": "Expérience Vidéo Premium",
+    "heroDescription": "Lecteur vidéo professionnel avec pistes audio multilingues et support de sous-titres dynamiques pour une expérience de visionnage améliorée.",
+    "uploadVideo": "Télécharger une Vidéo",
+    "audioTracks": "Pistes Audio",
+    "subtitles": "Sous-titres",
+    "subtitlesOff": "Sous-titres Désactivés",
+    "fullscreen": "Plein Écran",
+    "volume": "Volume",
+    "play": "Lecture",
+    "pause": "Pause",
+    "player": "Lecteur Vidéo",
+    "playerDescription": "Lecture vidéo professionnelle avec support audio et sous-titres multilingues",
+    "multiFormat": "Support Multi-Format",
+    "multiFormatDesc": "Supporte MP4, MKV, WebM avec protocoles de streaming HLS et MPEG-DASH pour une compatibilité maximale.",
+    "multiLanguage": "Audio Multilingue",
+    "multiLanguageDesc": "Commutation transparente entre plusieurs pistes audio en différentes langues avec détection automatique.",
+    "advancedSubtitles": "Sous-titres Avancés",
+    "advancedSubtitlesDesc": "Support intégré des sous-titres avec téléchargement de fichiers externes, contrôles de timing et génération par IA.",
+    "aiGeneration": "Génération de Sous-titres IA",
+    "aiGenerationDesc": "Téléchargez des vidéos et générez automatiquement des sous-titres en plusieurs langues avec OpenAI Whisper",
+    "comingSoon": "Bientôt Disponible"
   },
-  "features": {
-    "formats": {
-      "title": "Support Multi-Format",
-      "description": "Supporte MP4, MKV, WebM avec les protocoles de streaming HLS et MPEG-DASH pour une compatibilité maximale."
-    },
-    "audio": {
-      "title": "Audio Multilingue",
-      "description": "Commutation transparente entre plusieurs pistes audio dans différentes langues avec détection automatique."
-    },
-    "subtitles": {
-      "title": "Sous-titres Avancés",
-      "description": "Support intégré des sous-titres avec téléchargement de fichiers externes, contrôles de synchronisation et génération IA."
-    }
+  "language": {
+    "select": "Sélectionner la Langue",
+    "english": "English",
+    "french": "Français", 
+    "german": "Deutsch",
+    "arabic": "العربية"
+  },
+  "theme": {
+    "toggle": "Basculer le Thème",
+    "light": "Mode Clair",
+    "dark": "Mode Sombre"
+  },
+  "footer": {
+    "copyright": "© 2024 Plateforme Vidéo InSync. Optimisée pour le divertissement en vol et les environnements à ressources limitées."
   },
   "subtitles": {
     "title": "Sous-titres",
@@ -40,17 +45,5 @@
     "upload": "Télécharger un Fichier de Sous-titres",
     "builtin": "Intégré",
     "external": "Externe"
-  },
-  "audio": {
-    "title": "Audio",
-    "autoDetect": "Détection automatique"
-  },
-  "generator": {
-    "title": "Génération IA de Sous-titres",
-    "description": "Téléchargez des vidéos et générez automatiquement des sous-titres en plusieurs langues avec OpenAI Whisper",
-    "comingSoon": "Bientôt Disponible"
-  },
-  "footer": {
-    "copyright": "© 2024 Plateforme Vidéo InSync. Optimisée pour le divertissement en vol et les environnements à ressources limitées."
   }
 }

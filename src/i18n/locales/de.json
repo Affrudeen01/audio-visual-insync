@@ -1,56 +1,49 @@
 {
-  "common": {
-    "upload": "Hochladen",
-    "language": "Sprache",
-    "settings": "Einstellungen",
-    "close": "Schließen",
-    "save": "Speichern",
-    "cancel": "Abbrechen"
-  },
-  "header": {
-    "title": "InSync",
-    "subtitle": "Premium Video Platform",
-    "upload": "Hochladen"
-  },
   "video": {
-    "title": "Video Player",
-    "description": "Professionelle Videowiedergabe mit mehrsprachiger Audio- und Untertitelunterstützung",
-    "heroTitle": "Premium Video-Streaming-Erlebnis",
-    "heroDescription": "Mehrsprachiger Videoplayer optimiert für ressourcenarme Umgebungen mit erweiterte Untertitelunterstützung und KI-gestützter Generierung."
+    "heroTitle": "Premium Video Erfahrung",
+    "heroDescription": "Professioneller Video-Player mit mehrsprachigen Audiospuren und dynamischer Untertitel-Unterstützung für verbesserte Seherlebnisse.",
+    "uploadVideo": "Video Hochladen",
+    "audioTracks": "Audiospuren",
+    "subtitles": "Untertitel",
+    "subtitlesOff": "Untertitel Aus",
+    "fullscreen": "Vollbild",
+    "volume": "Lautstärke",
+    "play": "Abspielen",
+    "pause": "Pause",
+    "player": "Video Player",
+    "playerDescription": "Professionelle Videowiedergabe mit mehrsprachiger Audio- und Untertitelunterstützung",
+    "multiFormat": "Multi-Format Unterstützung",
+    "multiFormatDesc": "Unterstützt MP4, MKV, WebM mit HLS und MPEG-DASH Streaming-Protokollen für maximale Kompatibilität.",
+    "multiLanguage": "Mehrsprachiges Audio",
+    "multiLanguageDesc": "Nahtloses Wechseln zwischen mehreren Audiospuren in verschiedenen Sprachen mit automatischer Erkennung.",
+    "advancedSubtitles": "Erweiterte Untertitel",
+    "advancedSubtitlesDesc": "Integrierte Untertitelunterstützung mit externem Datei-Upload, Timing-Kontrollen und KI-gestützter Generierung.",
+    "aiGeneration": "KI Untertitel-Generierung",
+    "aiGenerationDesc": "Laden Sie Videos hoch und generieren Sie automatisch Untertitel in mehreren Sprachen mit OpenAI Whisper",
+    "comingSoon": "Demnächst Verfügbar"
   },
-  "features": {
-    "formats": {
-      "title": "Multi-Format-Unterstützung",
-      "description": "Unterstützt MP4, MKV, WebM mit HLS- und MPEG-DASH-Streaming-Protokollen für maximale Kompatibilität."
-    },
-    "audio": {
-      "title": "Mehrsprachiges Audio",
-      "description": "Nahtloses Wechseln zwischen mehreren Audiospuren in verschiedenen Sprachen mit automatischer Erkennung."
-    },
-    "subtitles": {
-      "title": "Erweiterte Untertitel",
-      "description": "Integrierte Untertitelunterstützung mit externem Datei-Upload, Timing-Kontrollen und KI-gestützter Generierung."
-    }
+  "language": {
+    "select": "Sprache Auswählen",
+    "english": "English",
+    "french": "Français",
+    "german": "Deutsch",
+    "arabic": "العربية"
+  },
+  "theme": {
+    "toggle": "Theme Wechseln",
+    "light": "Heller Modus",
+    "dark": "Dunkler Modus"
+  },
+  "footer": {
+    "copyright": "© 2024 InSync Video Platform. Optimiert für Bordunterhaltung und ressourcenarme Umgebungen."
   },
   "subtitles": {
     "title": "Untertitel",
     "off": "Aus",
     "show": "Untertitel Anzeigen",
-    "hide": "Untertitel Verstecken",
-    "upload": "Untertiteldatei Hochladen",
+    "hide": "Untertitel Verbergen",
+    "upload": "Untertitel-Datei Hochladen",
     "builtin": "Eingebaut",
     "external": "Extern"
-  },
-  "audio": {
-    "title": "Audio",
-    "autoDetect": "Automatische Erkennung"
-  },
-  "generator": {
-    "title": "KI-Untertitel-Generierung",
-    "description": "Laden Sie Videos hoch und generieren Sie automatisch Untertitel in mehreren Sprachen mit OpenAI Whisper",
-    "comingSoon": "Demnächst Verfügbar"
-  },
-  "footer": {
-    "copyright": "© 2024 InSync Video Platform. Optimiert für Bordunterhaltung und ressourcenarme Umgebungen."
   }
 }

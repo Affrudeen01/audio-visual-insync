@@ -10,7 +10,7 @@ interface VideoPlayerProps {
 }
 
 export const VideoPlayer = ({ 
-  src = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4", 
+  src = "/videos/default.mp4", 
   poster = "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1600&h=900",
   className = "" 
 }: VideoPlayerProps) => {
