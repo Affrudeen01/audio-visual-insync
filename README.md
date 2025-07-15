@@ -2,16 +2,9 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/4663ad34-7f5e-4ed6-8902-14f0d0c6dd2a
+
 
 ## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use InSync**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/4663ad34-7f5e-4ed6-8902-14f0d0c6dd2a) and start prompting.
-
 
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
@@ -56,13 +49,10 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/4663ad34-7f5e-4ed6-8902-14f0d0c6dd2a) and click on Share -> Publish.
 
 
 Yes, you can!
 
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
