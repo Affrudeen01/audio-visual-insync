@@ -62,6 +62,11 @@ export default {
 					track: 'hsl(var(--progress-track))',
 					fill: 'hsl(var(--progress-fill))'
 				},
+				'card-elevated': 'hsl(var(--card-elevated))',
+				'card-border': 'hsl(var(--card-border))',
+				'card-shadow': 'hsl(var(--card-shadow))',
+				'surface-glass': 'hsl(var(--surface-glass))',
+				'surface-glass-border': 'hsl(var(--surface-glass-border))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

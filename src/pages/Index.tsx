@@ -55,7 +55,7 @@ const Index = () => {
 
         {/* Video Player Section */}
         <div className="mb-12">
-          <Card className="bg-card/50 backdrop-blur-sm border-border/20">
+          <Card className="card-enhanced hover:shadow-lg transition-all duration-300">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Play className="w-5 h-5 text-primary" />
@@ -72,7 +72,7 @@ const Index = () => {
                   className="mb-4"
                 />
                 <VideoPlayer 
-                  className="aspect-video w-full max-w-4xl mx-auto"
+                  className="aspect-video w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg"
                   src={uploadedVideoUrl}
                   poster="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1600&h=900"
                 />
@@ -83,7 +83,7 @@ const Index = () => {
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <Card className="bg-card/30 backdrop-blur-sm border-border/20 hover:bg-card/50 transition-all duration-300">
+          <Card className="card-glass hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-lg">
                 <Play className="w-5 h-5 text-primary" />
@@ -97,7 +97,7 @@ const Index = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-card/30 backdrop-blur-sm border-border/20 hover:bg-card/50 transition-all duration-300">
+          <Card className="card-glass hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-lg">
                 <Globe className="w-5 h-5 text-accent" />
@@ -111,7 +111,7 @@ const Index = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-card/30 backdrop-blur-sm border-border/20 hover:bg-card/50 transition-all duration-300">
+          <Card className="card-glass hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-lg">
                 <Subtitles className="w-5 h-5 text-primary" />
@@ -127,7 +127,7 @@ const Index = () => {
         </div>
 
         {/* Coming Soon - Subtitle Generator */}
-        <Card className="bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20">
+        <Card className="card-glass bg-gradient-to-r from-primary/10 to-accent/10 border-primary/20 hover:shadow-lg transition-all duration-300">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Upload className="w-5 h-5 text-primary" />
