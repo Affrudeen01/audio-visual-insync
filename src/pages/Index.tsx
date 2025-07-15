@@ -3,7 +3,7 @@ import { VideoPlayer } from '@/components/VideoPlayer';
 import { VideoUploader } from '@/components/VideoUploader';
 import { LanguageSelector } from '@/components/LanguageSelector';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import { Play, Subtitles, Upload } from 'lucide-react';
+import { Play, Subtitles, Upload, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { useTranslation } from 'react-i18next';
