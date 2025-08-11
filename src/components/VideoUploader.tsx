@@ -27,10 +27,10 @@ export const VideoUploader = ({ onVideoSelect, className = "" }: VideoUploaderPr
         
         <div className="text-center">
           <p className="text-sm text-muted-foreground">
-            Upload your video to begin processing
+            {t('upload.subtitle')}
           </p>
           <p className="text-xs text-muted-foreground mt-1">
-            Supports MP4, WebM, AVI, MKV (max 500MB)
+            {t('upload.supportedFormats')} ({t('upload.maxSize')})
           </p>
         </div>
       </div>

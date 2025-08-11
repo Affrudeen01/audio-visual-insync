@@ -45,5 +45,22 @@
     "upload": "رفع ملف ترجمة",
     "builtin": "مدمج",
     "external": "خارجي"
+  },
+  "upload": {
+    "title": "رفع فيديو",
+    "subtitle": "اختر ملف فيديو للرفع والمعالجة",
+    "extractAudio": "استخراج الصوت",
+    "extractAudioDesc": "استخراج مسار الصوت من الفيديو",
+    "generateSubtitles": "إنشاء ترجمات",
+    "generateSubtitlesDesc": "إنشاء ترجمات بتنسيقات ولغات متعددة",
+    "selectLanguages": "اختيار اللغات",
+    "selectFormats": "اختيار التنسيقات",
+    "generateTTS": "إنشاء صوت من النص",
+    "generateTTSDesc": "تحويل النصوص المكتوبة إلى صوت باستخدام الذكاء الاصطناعي",
+    "processing": "جاري المعالجة...",
+    "process": "معالجة الفيديو",
+    "cancel": "إلغاء",
+    "maxSize": "الحد الأقصى لحجم الملف: 500 ميجابايت",
+    "supportedFormats": "التنسيقات المدعومة: MP4, WebM, AVI, MKV"
   }
 }

@@ -1,0 +1,68 @@
+{
+  "video": {
+    "heroTitle": "プレミアムビデオ体験",
+    "heroDescription": "多言語音声トラックと動的字幕サポートを備えたプロフェッショナルビデオプレーヤーで、視聴体験を向上させます。",
+    "uploadVideo": "ビデオをアップロード",
+    "audioTracks": "音声トラック",
+    "subtitles": "字幕",
+    "subtitlesOff": "字幕オフ",
+    "fullscreen": "フルスクリーン",
+    "volume": "音量",
+    "play": "再生",
+    "pause": "一時停止",
+    "player": "ビデオプレーヤー",
+    "playerDescription": "多言語音声と字幕サポートを備えたプロフェッショナルビデオ再生",
+    "multiFormat": "マルチフォーマットサポート",
+    "multiFormatDesc": "最大限の互換性のためにHLSおよびMPEG-DASHストリーミングプロトコルでMP4、MKV、WebMをサポート。",
+    "multiLanguage": "多言語音声",
+    "multiLanguageDesc": "自動検出機能付きで、異なる言語の複数の音声トラック間でシームレスに切り替え。",
+    "advancedSubtitles": "高度な字幕",
+    "advancedSubtitlesDesc": "外部ファイルアップロード、タイミング制御、AI生成機能を備えた内蔵字幕サポート。",
+    "aiGeneration": "AI字幕生成",
+    "aiGenerationDesc": "ビデオをアップロードし、OpenAI Whisperを使用して複数言語で自動的に字幕を生成",
+    "comingSoon": "近日公開"
+  },
+  "language": {
+    "select": "言語を選択",
+    "english": "English",
+    "french": "Français",
+    "german": "Deutsch",
+    "arabic": "العربية",
+    "japanese": "日本語",
+    "tamil": "தமிழ்"
+  },
+  "theme": {
+    "toggle": "テーマを切り替え",
+    "light": "ライトモード",
+    "dark": "ダークモード"
+  },
+  "footer": {
+    "copyright": "© 2024 InSyncビデオプラットフォーム。機内エンターテイメントとリソース制限環境に最適化。"
+  },
+  "subtitles": {
+    "title": "字幕",
+    "off": "オフ",
+    "show": "字幕を表示",
+    "hide": "字幕を非表示",
+    "upload": "字幕ファイルをアップロード",
+    "builtin": "内蔵",
+    "external": "外部"
+  },
+  "upload": {
+    "title": "ビデオをアップロード",
+    "subtitle": "アップロードして処理するビデオファイルを選択",
+    "extractAudio": "音声を抽出",
+    "extractAudioDesc": "ビデオから音声トラックを抽出",
+    "generateSubtitles": "字幕を生成",
+    "generateSubtitlesDesc": "複数の形式と言語で字幕を作成",
+    "selectLanguages": "言語を選択",
+    "selectFormats": "形式を選択",
+    "generateTTS": "トランスクリプトから音声を生成",
+    "generateTTSDesc": "AIを使用してテキストトランスクリプトを音声に変換",
+    "processing": "処理中...",
+    "process": "ビデオを処理",
+    "cancel": "キャンセル",
+    "maxSize": "最大ファイルサイズ：500MB",
+    "supportedFormats": "サポート形式：MP4、WebM、AVI、MKV"
+  }
+}

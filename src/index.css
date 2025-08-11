@@ -10,7 +10,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Light theme - refined and professional */
-    --background: 0 0% 100%;
+    --background: 0 0% 99%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -19,7 +19,7 @@ All colors MUST be HSL.
     --primary: 271 76% 53%;
     --primary-foreground: 0 0% 98%;
     --primary-glow: 271 76% 63%;
-    --secondary: 240 4.8% 95.9%;
+    --secondary: 240 4.8% 96.5%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
@@ -27,21 +27,21 @@ All colors MUST be HSL.
     --accent-foreground: 240 5.9% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
+    --border: 240 5.9% 88%;
+    --input: 240 5.9% 94%;
     --ring: 271 76% 53%;
     --player-surface: 240 10% 3.9%;
     --player-control: 240 3.7% 15.9%;
     --player-control-hover: 240 4.8% 95.9%;
-    --progress-track: 240 4.8% 95.9%;
+    --progress-track: 240 4.8% 92%;
     --progress-fill: 271 76% 53%;
     
     /* Light mode specific enhancements */
-    --card-elevated: 0 0% 98%;
-    --card-border: 240 6% 90%;
+    --card-elevated: 0 0% 100%;
+    --card-border: 240 6% 85%;
     --card-shadow: 240 3% 15%;
     --surface-glass: 0 0% 100%;
-    --surface-glass-border: 240 5% 85%;
+    --surface-glass-border: 240 5% 82%;
     
     --radius: 0.75rem;
   }

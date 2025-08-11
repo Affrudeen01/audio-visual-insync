@@ -151,10 +151,10 @@ export const VideoUploaderModal = ({ isOpen, onClose, onVideoSelect }: VideoUplo
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2">
             <Upload className="w-5 h-5 text-primary" />
-            {t('video.uploadVideo')}
+            {t('upload.title')}
           </DialogTitle>
           <DialogDescription>
-            Upload your video and configure processing options
+            {t('upload.subtitle')}
           </DialogDescription>
         </DialogHeader>
 
@@ -183,7 +183,7 @@ export const VideoUploaderModal = ({ isOpen, onClose, onVideoSelect }: VideoUplo
                       {selectedFile ? selectedFile.name : "Click to select video file"}
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      Supports MP4, WebM, AVI, MKV (max 500MB)
+                      {t('upload.supportedFormats')} ({t('upload.maxSize')})
                     </p>
                     {selectedFile && (
                       <Badge variant="secondary" className="mt-2">
@@ -216,11 +216,11 @@ export const VideoUploaderModal = ({ isOpen, onClose, onVideoSelect }: VideoUplo
                       }
                     />
                     <Label htmlFor="extract-audio" className="text-sm font-medium">
-                      Extract Audio Track
+                      {t('upload.extractAudio')}
                     </Label>
                   </div>
                   <p className="text-xs text-muted-foreground ml-6">
-                    Extract the audio track as a separate MP3 file
+                    {t('upload.extractAudioDesc')}
                   </p>
                 </CardContent>
               </Card>
@@ -243,7 +243,7 @@ export const VideoUploaderModal = ({ isOpen, onClose, onVideoSelect }: VideoUplo
                       }
                     />
                     <Label htmlFor="generate-subtitles" className="text-sm font-medium">
-                      Generate Subtitles
+                      {t('upload.generateSubtitles')}
                     </Label>
                   </div>
 
@@ -251,7 +251,7 @@ export const VideoUploaderModal = ({ isOpen, onClose, onVideoSelect }: VideoUplo
                     <div className="space-y-4 ml-6">
                       {/* Language Selection */}
                       <div>
-                        <h4 className="text-sm font-medium mb-3">Target Languages</h4>
+                        <h4 className="text-sm font-medium mb-3">{t('upload.selectLanguages')}</h4>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                           {availableLanguages.map((lang) => (
                             <div key={lang.code} className="flex items-center space-x-2">
@@ -272,7 +272,7 @@ export const VideoUploaderModal = ({ isOpen, onClose, onVideoSelect }: VideoUplo
 
                       {/* Format Selection */}
                       <div>
-                        <h4 className="text-sm font-medium mb-3">Subtitle Formats</h4>
+                        <h4 className="text-sm font-medium mb-3">{t('upload.selectFormats')}</h4>
                         <div className="grid grid-cols-2 gap-3">
                           {subtitleFormats.map((format) => (
                             <div key={format.id} className="flex items-center space-x-2">
@@ -311,11 +311,11 @@ export const VideoUploaderModal = ({ isOpen, onClose, onVideoSelect }: VideoUplo
                       }
                     />
                     <Label htmlFor="generate-audio" className="text-sm font-medium">
-                      Generate Audio from Transcript
+                      {t('upload.generateTTS')}
                     </Label>
                   </div>
                   <p className="text-xs text-muted-foreground ml-6 mt-2">
-                    Create AI-generated voice narration from subtitle text
+                    {t('upload.generateTTSDesc')}
                   </p>
                 </CardContent>
               </Card>
@@ -323,7 +323,7 @@ export const VideoUploaderModal = ({ isOpen, onClose, onVideoSelect }: VideoUplo
               {/* Action Buttons */}
               <div className="flex justify-end gap-3 pt-4">
                 <Button variant="outline" onClick={onClose} disabled={processing}>
-                  Cancel
+                  {t('upload.cancel')}
                 </Button>
                 <Button 
                   onClick={handleProcess} 
@@ -333,12 +333,12 @@ export const VideoUploaderModal = ({ isOpen, onClose, onVideoSelect }: VideoUplo
                   {processing ? (
                     <>
                       <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                      Processing...
+                      {t('upload.processing')}
                     </>
                   ) : (
                     <>
                       <Upload className="w-4 h-4 mr-2" />
-                      Upload & Process
+                      {t('upload.process')}
                     </>
                   )}
                 </Button>

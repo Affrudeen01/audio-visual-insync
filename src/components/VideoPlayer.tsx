@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { VideoControls } from './VideoControls';
 import { AudioSelector } from './AudioSelector';
 import { SubtitleSelector } from './SubtitleSelector';
+import { useTranslation } from 'react-i18next';
 
 interface VideoPlayerProps {
   src?: string;
@@ -10,10 +11,25 @@ interface VideoPlayerProps {
 }
 
 export const VideoPlayer = ({ 
-  src = "/videos/default.mp4", 
+  src, 
   poster = "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1600&h=900",
   className = "" 
 }: VideoPlayerProps) => {
+  const { i18n } = useTranslation();
+  
+  // Get language-specific video source
+  const getVideoSource = () => {
+    if (src) return src; // If external video provided, use it
+    
+    const currentLang = i18n.language;
+    const videoPath = `/videos/video-${currentLang}.mp4`;
+    
+    // Fallback to default if language-specific doesn't exist
+    const fallbackPath = '/videos/default.mp4';
+    return videoPath || fallbackPath;
+  };
+  
+  const videoSource = getVideoSource();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
@@ -144,7 +160,7 @@ export const VideoPlayer = ({
         onPause={() => setIsPlaying(false)}
         onClick={togglePlay}
       >
-        <source src={src} type="video/mp4" />
+        <source src={videoSource} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

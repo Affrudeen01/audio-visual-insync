@@ -45,5 +45,22 @@
     "upload": "Upload Subtitle File",
     "builtin": "Built-in",
     "external": "External"
+  },
+  "upload": {
+    "title": "Upload Video",
+    "subtitle": "Select a video file to upload and process",
+    "extractAudio": "Extract Audio",
+    "extractAudioDesc": "Extract audio track from the video",
+    "generateSubtitles": "Generate Subtitles",
+    "generateSubtitlesDesc": "Create subtitles in multiple formats and languages",
+    "selectLanguages": "Select Languages",
+    "selectFormats": "Select Formats",
+    "generateTTS": "Generate Audio from Transcript",
+    "generateTTSDesc": "Convert text transcripts to audio using AI",
+    "processing": "Processing...",
+    "process": "Process Video",
+    "cancel": "Cancel",
+    "maxSize": "Maximum file size: 500MB",
+    "supportedFormats": "Supported formats: MP4, WebM, AVI, MKV"
   }
 }

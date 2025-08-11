@@ -45,5 +45,22 @@
     "upload": "Untertitel-Datei Hochladen",
     "builtin": "Eingebaut",
     "external": "Extern"
+  },
+  "upload": {
+    "title": "Video Hochladen",
+    "subtitle": "Wählen Sie eine Videodatei zum Hochladen und Verarbeiten",
+    "extractAudio": "Audio Extrahieren",
+    "extractAudioDesc": "Audiospur aus dem Video extrahieren",
+    "generateSubtitles": "Untertitel Generieren",
+    "generateSubtitlesDesc": "Untertitel in mehreren Formaten und Sprachen erstellen",
+    "selectLanguages": "Sprachen Auswählen",
+    "selectFormats": "Formate Auswählen",
+    "generateTTS": "Audio aus Transkript Generieren",
+    "generateTTSDesc": "Texttranskripte mit KI in Audio umwandeln",
+    "processing": "Verarbeitung läuft...",
+    "process": "Video Verarbeiten",
+    "cancel": "Abbrechen",
+    "maxSize": "Maximale Dateigröße: 500MB",
+    "supportedFormats": "Unterstützte Formate: MP4, WebM, AVI, MKV"
   }
 }

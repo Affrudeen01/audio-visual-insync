@@ -45,5 +45,22 @@
     "upload": "Télécharger un Fichier de Sous-titres",
     "builtin": "Intégré",
     "external": "Externe"
+  },
+  "upload": {
+    "title": "Télécharger une Vidéo",
+    "subtitle": "Sélectionner un fichier vidéo à télécharger et traiter",
+    "extractAudio": "Extraire l'Audio",
+    "extractAudioDesc": "Extraire la piste audio de la vidéo",
+    "generateSubtitles": "Générer des Sous-titres",
+    "generateSubtitlesDesc": "Créer des sous-titres en plusieurs formats et langues",
+    "selectLanguages": "Sélectionner les Langues",
+    "selectFormats": "Sélectionner les Formats",
+    "generateTTS": "Générer l'Audio à partir du Transcript",
+    "generateTTSDesc": "Convertir les transcripts texte en audio avec l'IA",
+    "processing": "Traitement en cours...",
+    "process": "Traiter la Vidéo",
+    "cancel": "Annuler",
+    "maxSize": "Taille maximale : 500MB",
+    "supportedFormats": "Formats supportés : MP4, WebM, AVI, MKV"
   }
 }
